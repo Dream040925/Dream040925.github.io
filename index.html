@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>云烟成雨的个人网站</title>
+  <style>
+    /* 基础样式 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Microsoft YaHei', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 导航栏 */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 5%;
+      background: #2c3e50;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .brand {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+    }
+
+    .nav-links a:hover {
+      background: #3498db;
+      color: white;
+    }
+
+    /* 主要内容容器 */
+    .container {
+      flex: 1;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* 个人信息板块 */
+    .profile {
+      text-align: center;
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 2rem 0;
+    }
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #3498db;
+      margin-bottom: 1.5rem;
+    }
+
+    .info-box {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .info-item {
+      font-size: 1.1rem;
+      color: #2c3e50;
+      margin: 1rem 0;
+      padding: 0.8rem;
+      background: #f8f9fa;
+      border-radius: 6px;
+    }
+
+    /* 底部栏 */
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 2rem;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .social-links {
+      margin-top: 1.5rem;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 1rem;
+      transition: transform 0.3s;
+    }
+
+    .social-links img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+    }
+
+    /* 动画效果 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .profile {
+      animation: fadeIn 0.8s ease-out;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand">云烟成雨</div>
+    <ul class="nav-links">
+      <li><a href="#home">首页</a></li>
+      <li><a href="#about">关于</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="meet-quote">
+      ✨ 世间一切相遇都是久别重逢 ✨
+    </div>
+    <!-- 在style部分添加对应样式 -->
+    <style>
+      /* 相遇语录样式 */
+      .meet-quote {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #2c3e50;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        background: #f0f8ff;
+        border-radius: 8px;
+        border-left: 4px solid #3498db;
+        animation: slideIn 1s ease-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* 新增滑动进入动画 */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+
+    <img src="https://cdn.pixabay.com/photo/2022/12/20/07/37/cat-7667234_1280.jpg" alt="头像" class="avatar">
+    <div class="info-box">
+      <p class="info-item">欢迎来到我的个人网站！我是<b>云烟成雨！</b></p>
+      <p class="info-item">某不知名大学计科大二在读，人工智能爱好者</p>
+      <p class="info-item">终极梦想：为推动社会生产力进步做出贡献</p>
+      <p class="info-item">感谢你来到我的个人网站！🎉</p>
+    </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 云烟成雨 保留所有权利</p>
+    </div>
+  </footer>
+</body>
+
+</html>
